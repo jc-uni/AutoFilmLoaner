@@ -2,10 +2,10 @@ import java.util.ArrayList;
 
 public interface Movie {
 
-	int getRating();
-	int getID();
-	String getTitle();
-	ArrayList<Category> getCategories();
+	int GetRating();
+	int GetID();
+	String GetTitle();
+	ArrayList<Category> GetCategories();
 	
 	enum Category {
 		HORROR,

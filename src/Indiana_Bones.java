@@ -3,24 +3,18 @@ import java.util.ArrayList;
 public class Indiana_Bones implements Movie{
 
 	@Override
-	public int getRating() {
-		// TODO Auto-generated method stub
-		return 8;
-	}
+	public int GetRating() {return 8;}
 
 	@Override
-	public int getID() {
-		// TODO Auto-generated method stub
-		return 123456;
-	}
+	public int GetID() {return 123456;}
 
 	@Override
-	public String getTitle() {
+	public String GetTitle() {
 		return "Indiana Bones";
 	}
 
 	@Override
-	public ArrayList<Category> getCategories() {
+	public ArrayList<Category> GetCategories() {
 
 		ArrayList<Category> categories = new ArrayList<Category>();
 

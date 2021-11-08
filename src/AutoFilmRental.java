@@ -10,32 +10,30 @@ public class AutoFilmRental {
 		Scanner scanner=new Scanner(System.in);
 		String str = scanner.nextLine();
 
+		ArrayList<Movie> allMovies = new ArrayList<>();
+		allMovies.add(new Indiana_Bones());
+		allMovies.add(new False_Oats());
+		allMovies.add(new The_Summoning());
 
-		Indiana_Bones film = new Indiana_Bones();
-		ArrayList<Movie> Chosen = new ArrayList<>();
-		Chosen.add(new Indiana_Bones());
-		Chosen.add(new False_Oats());
-		Chosen.add(new The_Summoning());
-
-		int filmSelector=0;
+		int selectedFilm=0;
 
 		System.out.println("Du har valgt:");
 		if(str.equals("1")){
-			System.out.println(Chosen.get(0).getTitle());
-			filmSelector = 0;
+			System.out.println(allMovies.get(0).GetTitle());
+			selectedFilm = 0;
 		}
 		else if(str.equals("2")){
-			System.out.println(Chosen.get(1).getTitle());
-			filmSelector = 1;
+			System.out.println(allMovies.get(1).GetTitle());
+			selectedFilm = 1;
 		}
 		else if (str.equals("3")){
-			System.out.println(Chosen.get(2).getTitle());
-			filmSelector = 2;
+			System.out.println(allMovies.get(2).GetTitle());
+			selectedFilm = 2;
 		}
 		System.out.println("Det er en");
 
-		for(int i = 0;i<Chosen.get(filmSelector).getCategories().size();i++){
-			System.out.println(Chosen.get(filmSelector).getCategories().get(i));
+		for(int i = 0;i<allMovies.get(selectedFilm).GetCategories().size();i++){
+			System.out.println(allMovies.get(selectedFilm).GetCategories().get(i));
 		}
 		System.out.println("film.");
 
