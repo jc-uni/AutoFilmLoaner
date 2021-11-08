@@ -9,6 +9,7 @@ public class AutoFilmRental {
 		allMovies.add(new Indiana_Bones());
 		allMovies.add(new False_Oats());
 		allMovies.add(new The_Summoning());
+		allMovies.add(new Hooblaphant_and_Friends());
 
 		System.out.println("Velkommen");
 		System.out.println("Lei en film:");
@@ -28,7 +29,7 @@ public class AutoFilmRental {
 			System.out.println(allMovies.get(selectedFilm).GetCategories().get(i));
 		}
 		System.out.println("film.");
-		System.out.println("Ha en god filmkveld!");
+		System.out.println("Ha en god filmopplevelse!");
 
 		}
 

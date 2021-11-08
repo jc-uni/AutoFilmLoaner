@@ -13,7 +13,8 @@ public interface Movie {
 		ACTION,
 		WESTERN,
 		CRIME,
-		MYSTERY
+		MYSTERY,
+		KIDS
 	}
 
 }
