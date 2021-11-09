@@ -5,7 +5,7 @@ public class AutoFilmRental {
 
 	public AutoFilmRental() {
 
-		ArrayList<Movie> allMovies = new ArrayList<>();
+		var allMovies = new ArrayList<Movie>();
 		allMovies.add(new Indiana_Bones());
 		allMovies.add(new False_Oats());
 		allMovies.add(new The_Summoning());
@@ -18,11 +18,10 @@ public class AutoFilmRental {
 			System.out.println("Tast " +i +" for " +allMovies.get(i).GetTitle());
 		}
 
-		Scanner scanner=new Scanner(System.in);
+		var scanner = new Scanner(System.in);
 		int selectedFilm = Integer.parseInt(scanner.nextLine());
 
 		System.out.println("Du har valgt: " +allMovies.get(selectedFilm).GetTitle());
-
 		System.out.println("Det er en");
 
 		for(int i = 0;i<allMovies.get(selectedFilm).GetCategories().size();i++){

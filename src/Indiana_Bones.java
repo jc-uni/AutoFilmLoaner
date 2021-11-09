@@ -9,15 +9,11 @@ public class Indiana_Bones implements Movie{
 	public int GetID() {return 123456;}
 
 	@Override
-	public String GetTitle() {
-		return "Indiana Bones";
-	}
+	public String GetTitle() {return "Indiana Bones";}
 
 	@Override
 	public ArrayList<Category> GetCategories() {
-
-		ArrayList<Category> categories = new ArrayList<Category>();
-
+		var categories = new ArrayList<Category>();
 		categories.add(Category.COMEDY);
 		categories.add(Category.ACTION);
 		categories.add(Category.MYSTERY);
