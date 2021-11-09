@@ -18,7 +18,7 @@ public class The_Summoning implements Movie{
 
     @Override
     public ArrayList<Category> GetCategories() {
-        ArrayList<Category> categories = new ArrayList<Category>();
+        var categories = new ArrayList<Category>();
         categories.add(Category.HORROR);
         return categories;
     }

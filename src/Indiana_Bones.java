@@ -15,9 +15,7 @@ public class Indiana_Bones implements Movie{
 
 	@Override
 	public ArrayList<Category> GetCategories() {
-
-		ArrayList<Category> categories = new ArrayList<Category>();
-
+		var categories = new ArrayList<Category>();
 		categories.add(Category.COMEDY);
 		categories.add(Category.ACTION);
 		categories.add(Category.MYSTERY);

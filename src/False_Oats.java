@@ -18,7 +18,7 @@ public class False_Oats implements Movie{
 
     @Override
     public ArrayList<Category> GetCategories() {
-        ArrayList<Category> categories = new ArrayList<Category>();
+        var categories = new ArrayList<Category>();
         categories.add(Category.WESTERN);
         categories.add(Category.CRIME);
         return categories;
